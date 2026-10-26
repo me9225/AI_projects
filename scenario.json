@@ -1,0 +1,22 @@
+{
+  "sessions": [
+    {
+      "session_id": "session-1",
+      "turns": [
+        {"user": "מצא מקומות בתל אביב שמתאימים ל-60 משתתפים ויש בהם מקרן וחניה"},
+        {"user": "זכור שהעיר המועדפת עליי היא תל אביב", "memory_update": {"default_city": "Tel Aviv"}},
+        {"user": "בדוק את מזג האוויר בתל אביב", "expect_tool": "get_weather"},
+        {"user": "סכם את האפשרויות"}
+      ]
+    },
+    {
+      "session_id": "session-2",
+      "turns": [
+        {"user": "מצא מקום ל-50 משתתפים", "expect_memory": {"default_city": "Tel Aviv"}},
+        {"user": "עבור הבקשה הנוכחית חפש בירושלים", "expect_city": "Jerusalem"},
+        {"user": "הצג פרטים על demo-002", "expect_tool": "get_venue_details"},
+        {"user": "סכם את ההמלצה"}
+      ]
+    }
+  ]
+}
